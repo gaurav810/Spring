@@ -10,7 +10,7 @@ import com.profile.demo.bean.User;
 @Configuration
 public class ProfileTestConfig {
 
-	@Value("${user.name1}")
+	@Value("${user.fullname}")
 	private String name;
 	
 	@Value("${user.passwprd}")

@@ -33,6 +33,6 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
         List<String> errorMessages = new ArrayList<>();
         errorMessages.add(e.getLocalizedMessage());
         ErrorResponse error = new ErrorResponse("Internal server Error", errorMessages);
-        return new ResponseEntity(error, HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<Object>(error, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
